@@ -4,35 +4,45 @@
     <meta charset="utf-8">
     <title>My CV Siarhei Turau junior frontend Developer</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      figure {
+       width: auto; /* Ширина области */
+       height: auto; /* Высота области */
+       margin: 1px; /* 1px отступы от краев */
+       overflow: hidden; /* Прячем всё за пределами */
+       min-width: 200px; /* Минимальная ширина */
+       min-height: 200px; /* Минимальная высота */
+      }
+      figure img { 
+       width: 100%; /* Ширина изображений */
+       margin: -10% 0 0 0; /* Сдвигаем вверх */
+      }
+     </style>
 </head>
   <body>
     <header class="header">
-    <h1>Junior Front-end Developer</h1>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+        <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">My Experience</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+      </ul>
+    </nav>
     </header>
     <main>
     <div class="textcols">
       <div class="textcols-row">
         <div class="textcols-item">
-          <style>
-            figure {
-             width: auto; /* Ширина области */
-             height: auto; /* Высота области */
-             margin: 1px; /* 1px отступы от краев */
-             overflow: hidden; /* Прячем всё за пределами */
-             min-width: 200px; /* Минимальная ширина */
-             min-height: 200px; /* Минимальная высота */
-            }
-            figure img { 
-             width: 100%; /* Ширина изображений */
-             margin: -10% 0 0 0; /* Сдвигаем вверх */
-            }
-           </style>
            <figure>
-          <img width="auto" height="auto" src="https://avatars.githubusercontent.com/u/92371198?v=4" alt="My selfie">
+          <img src="./assets/githublogo1.jpeg" alt="My selfie">
            </figure>
           <h2>Siarhei Turau</h2>
-          <h3>My contacts</h3>
-            <ul>
+          <h3>Contacts</h3>
+            <ul id="contacts">
             <li>Belarus, Minsk</li>
             <li>Age 49</li>
             <li>Phone: +375 29 6123090</li>
@@ -41,11 +51,11 @@
             <li>My profile <a href="https://www.linkedin.com/in/siarhei-turau-98ab2a36">linkedin</a></li>
             </ul>
           <h3>Education</h3>
-          <ul>
+          <ul id="education">
             <li>Vitebsk State College of electrical engineering</li>
             <li>Belarusian Commercial University of Management</li>
           </ul>
-          <h3>Languages</h3>
+          <h3 id="languages">Languages</h3>
           <ul>
             <li>Russian</li>
             <li>Ukranian</li>
@@ -55,24 +65,24 @@
         </div>
         <div class="textcols-item">
           <article>
-            <h2>About Me</h2>
-            <p>&nbspHello!</p>
-            <p>&nbspI am 49 years old. Previously, I worked in finance and business management. At the moment I would like to do something new and get a new profession. Previously, I completed courses in Python. I also took a course on getting to know Tableau. I am going to learn front end development, backend development and framework Python + Django.</p>
-            <h3>My Experience</h3>
+            <h2 id="summary">About Me</h2>
+            <p>&nbsp;Hello!</p>
+            <p>&nbsp;I am 49 years old. Previously, I worked in finance and business management. At the moment I would like to do something new and get a new profession. Previously, I completed courses in Python. I also took a course on getting to know Tableau. I am going to learn front end development, backend development and framework Python + Django.</p>
+            <h3 id="experience">My Experience</h3>
             <ul>
               <li>Freelancer</li>
               <li>Financial Manager</li>
               <li>Entrepreneur - own small business</li>
             </ul>
-            <h3>My Skills</h3>
-            <ul>
+            <h3>Skills</h3>
+            <ul id="skills">
               <li>Financial management</li>
               <li>Introduction to Python</li>
               <li>Introduction to Tableau</li>
               <li>Introduction to HTML</li>
               <li>Introduction to CSS</li>
             </ul>
-            <h3>Example my code</h3>
+            <h3 id="code">Example my code</h3>
               <pre>
                 <code>
               data = {
@@ -101,7 +111,7 @@
     </main>
     <footer class="footer">
       <a href="https://rs.school/js/"><img height="45" src="https://rs.school/images/rs_school_js.svg" alt="Logo rs - school" title="Logo RS School"></a>
-      &nbsp&nbspCopyright 2023 &copy; <a class="copyright" href="https://github.com/sturau">Siarhei Turau</a>
+      &nbsp;Copyright 2023 &copy; <a class="copyright" href="https://github.com/sturau">Siarhei Turau</a>
       </footer>
       </body>
       </html>
