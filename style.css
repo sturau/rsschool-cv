@@ -5,7 +5,7 @@
  
 .blocks {
   width: 100%;
-  height: 600px;
+  height: 100%;
   display: flex;
   flex-flow: row wrap;
 }
@@ -21,7 +21,8 @@
  
 .block:nth-of-type(2) {
   width: 65%;
-  background-color: #ffff8f;
+  background-color: #ffffff;
+  text-align: justify;
 }
  
 html, body {
@@ -36,6 +37,8 @@ html, body {
 .header {
   height: 70px;
   background-color: #ffc940;
+  display: block;
+  padding: 2px;
 }
  
 .footer {
@@ -43,4 +46,18 @@ html, body {
   background-color: #ffd773;
   display: block;
   flex-basis: auto;
+  padding: 2px;
+}
+ 
+h2 {
+  text-align: center;
+}
+ 
+h1 {
+  text-align: center;
+}
+ 
+h3 {
+  position: left;
+  padding: 12px;
 }
