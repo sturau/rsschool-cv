@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>My CV Siarhei Turau junior frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      figure {
+       width: auto; /* Ширина области */
+       height: auto; /* Высота области */
+       margin: 1px; /* 1px отступы от краев */
+       overflow: hidden; /* Прячем всё за пределами */
+       min-width: 200px; /* Минимальная ширина */
+       min-height: 200px; /* Минимальная высота */
+      }
+      figure img { 
+       width: 100%; /* Ширина изображений */
+       margin: -10% 0 0 0; /* Сдвигаем вверх */
+      }
+     </style>
+</head>
+  <body>
+    <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+        <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">My Experience</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+    <div class="textcols">
+      <div class="textcols-row">
+        <div class="textcols-item">
+           <figure>
+          <img src="./assets/githublogo1.jpeg" alt="My selfie">
+           </figure>
+          <h2>Siarhei Turau</h2>
+          <h3>Contacts</h3>
+            <ul id="contacts">
+            <li>Belarus, Minsk</li>
+            <li>Age 49</li>
+            <li>Phone: +375 29 6123090</li>
+            <li>Telegram <a href="https://t.me/sturau">invite</a></li>
+            <li>GitHub <a href="https://github.com/sturau">sturau</a></li>
+            <li>My profile <a href="https://www.linkedin.com/in/siarhei-turau-98ab2a36">linkedin</a></li>
+            </ul>
+          <h3>Education</h3>
+          <ul id="education">
+            <li>Vitebsk State College of electrical engineering</li>
+            <li>Belarusian Commercial University of Management</li>
+          </ul>
+          <h3 id="languages">Languages</h3>
+          <ul>
+            <li>Russian</li>
+            <li>Ukranian</li>
+            <li>German A1</li>
+            <li>English A2</li>
+          </ul>
+        </div>
+        <div class="textcols-item">
+          <article>
+            <h2 id="summary">About Me</h2>
+            <p>&nbsp;Hello!</p>
+            <p>&nbsp;I am 49 years old. Previously, I worked in finance and business management. At the moment I would like to do something new and get a new profession. Previously, I completed courses in Python. I also took a course on getting to know Tableau. I am going to learn front end development, backend development and framework Python + Django.</p>
+            <h3 id="experience">My Experience</h3>
+            <ul>
+              <li>Freelancer</li>
+              <li>Financial Manager</li>
+              <li>Entrepreneur - own small business</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul id="skills">
+              <li>Financial management</li>
+              <li>Introduction to Python</li>
+              <li>Introduction to Tableau</li>
+              <li>Introduction to HTML</li>
+              <li>Introduction to CSS</li>
+            </ul>
+            <h3 id="code">Example my code</h3>
+              <pre>
+                <code>
+              data = {
+              'Singapore': 1,
+              'Ireland': 6,
+              'United Kingdom': 7,
+              'Germany': 27,
+              'Armenia': 34,
+              'United States': 17,
+              'Canada': 9,
+              'Italy': 74
+          }
+          
+          x=input("Input Country: ")
+          print(data.get(x, "Not found"))
+                </code>
+              </pre>
+              <h3>My educational projects at the front end school</h3>
+              <ul>
+                <li><a href="https://sturau.github.io/rsschool-cv/cv#hello">CV#1</a></li>
+              </ul>
+        </article>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer class="footer">
+      <a href="https://rs.school/js/"><img height="45" src="https://rs.school/images/rs_school_js.svg" alt="Logo rs - school" title="Logo RS School"></a>
+      &nbsp;Copyright 2023 &copy; <a class="copyright" href="https://github.com/sturau">Siarhei Turau</a>
+      </footer>
+      </body>
+      </html>
