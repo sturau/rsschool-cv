@@ -43,6 +43,7 @@ html, body {
   display: block;
   flex-basis: auto;
   padding: 2px;
+  align-items: center;
 }
  
 h2 {
